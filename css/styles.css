@@ -11006,30 +11006,36 @@ section.resume-section .resume-section-content {
 
 #photos
 {
-  height: 100vh;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-content: center;
+  background-color: #16003B;
 }
 
-#gallery
+#ThankYou
 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  border: 8px solid #16003B;
+  text-align: center;
 }
 
-#gallery img
+#ThankYou h1
+{
+  color: white;
+}
+
+
+
+@media(min-width: 1201px)
+{
+  #photos img
 {
     float: left;
-    width:  16rem;
-    height: 15rem;
     object-fit: cover;
     filter: blur(20px) grayscale(20%);
 }
-
-#gallery img:hover
+#photos img:hover
 {
   filter: blur(0px) grayscale(0%);
 }
+}
+
